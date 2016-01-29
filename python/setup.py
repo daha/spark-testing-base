@@ -11,7 +11,6 @@ setup(
     description='Spark testing for python',
     long_description='',
     install_requires=[
-        'unittest2',
         'findspark',
         'pytest',
         'hypothesis'
@@ -19,6 +18,6 @@ setup(
     tests_require=[
         'nose',
         'coverage',
-        'unittest2'
+        'unittest'
     ],
 )

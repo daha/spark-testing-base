@@ -18,7 +18,7 @@
 """Simple streaming test"""
 
 from sparktestingbase.streamingtestcase import StreamingTestCase
-import unittest2
+import unittest
 
 
 class SimpleStreamingTest(StreamingTestCase):
@@ -78,4 +78,4 @@ class SimpleStreamingTest(StreamingTestCase):
 
 
 if __name__ == "__main__":
-    unittest2.main()
+    unittest.main()

@@ -17,7 +17,7 @@
 
 """Simple test example"""
 
-import unittest2
+import unittest
 from sparktestingbase.testcase import SparkTestingBaseTestCase
 
 
@@ -32,4 +32,4 @@ class HelloWorldTest(SparkTestingBaseTestCase):
         assert result == input
 
 if __name__ == "__main__":
-    unittest2.main()
+    unittest.main()

@@ -19,12 +19,12 @@
 
 from .utils import add_pyspark_path, quiet_py4j
 
-import unittest2
+import unittest
 from pyspark.context import SparkContext
 import os
 
 
-class SparkTestingBaseTestCase(unittest2.TestCase):
+class SparkTestingBaseTestCase(unittest.TestCase):
 
     """Basic common test case for Spark. Provides a Spark context as sc.
     For non local mode testing you can either override sparkMaster
@@ -50,7 +50,7 @@ class SparkTestingBaseTestCase(unittest2.TestCase):
         self.sc._jvm.System.clearProperty("spark.driver.port")
 
 
-class SparkTestingBaseReuse(unittest2.TestCase):
+class SparkTestingBaseReuse(unittest.TestCase):
 
     """Basic common test case for Spark. Provides a Spark context as sc.
     For non local mode testing you can either override sparkMaster
@@ -81,4 +81,4 @@ class SparkTestingBaseReuse(unittest2.TestCase):
 
 
 if __name__ == "__main__":
-    unittest2.main()
+    unittest.main()
