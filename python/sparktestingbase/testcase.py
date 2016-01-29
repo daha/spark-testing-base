@@ -32,7 +32,7 @@ class SparkTestingBaseTestCase(unittest2.TestCase):
 
     @classmethod
     def getMaster(cls):
-        return os.getenv('SPARK_MASTER', "local[4]")
+        return os.getenv('SPARK_MASTER', "local[*]")
 
     def setUp(self):
         """Setup a basic Spark context for testing"""
@@ -58,7 +58,7 @@ class SparkTestingBaseReuse(unittest2.TestCase):
 
     @classmethod
     def getMaster(cls):
-        return os.getenv('SPARK_MASTER', "local[4]")
+        return os.getenv('SPARK_MASTER', "local[*]")
 
     @classmethod
     def setUpClass(cls):
